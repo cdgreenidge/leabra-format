@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A Leabra 7 network",
+    "definitions": {
+        "unit_spec": {
+        },
+        "layer_spec": {
+        },
+        "projection_spec": {
+        },
+        "layer": {
+        },
+        "projection": {
+        }
+    },
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["layers", "projections"],
+    "properties": {
+        "unit_specs": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/unit_spec"
+            }
+        },
+        "layer_specs": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/layer_spec"
+            }
+        },
+        "projection_specs": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/projection_spec"
+            }
+        },
+        "layers": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/layer"
+            }
+        },
+        "projections": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/definitions/projection"
+            }
+        }
+    }
+}
