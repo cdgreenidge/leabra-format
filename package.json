@@ -1,0 +1,9 @@
+{
+    "name": "leabra-format",
+    "devDependencies": {
+        "jshint": "latest"
+    },
+    "scripts": {
+        "lint": "jshint v7/netschema.json"
+    }
+}
